@@ -1,0 +1,9 @@
+class NumArray:
+    def _init_(self,arr):
+        n=len(arr)
+        self.pf=[0]*(n+1)
+        self.pf[0]=arr[0]
+        for i in arnge(1,n):
+            self.pf[i]=pf[i-1]+arr[i]
+    def sumRange(Self,l,r):
+        return self.pf[r]-self.pf[l-1]
